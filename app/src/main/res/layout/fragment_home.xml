@@ -2,26 +2,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context="com.ss.sampleproject.fragments.HomeFragment">
 
     <EditText
+        android:id="@+id/edt_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/gallery" />
+        android:gravity="center"
+        android:hint="mobile number"
+        android:inputType="number"
+        android:maxLength="10" />
 
     <EditText
+        android:id="@+id/edt_date"
         android:layout_width="match_parent"
+        android:focusable="false"
         android:layout_height="wrap_content"
-        android:text="@string/gallery" />
+        android:gravity="center"
+        android:hint="date" />
 
-    <EditText
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/gallery" />
+        android:text="@string/home" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/gallery" />
+
 </LinearLayout>
